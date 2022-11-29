@@ -6,7 +6,7 @@
     <title>TenTip</title>
   </head>
   <body>
-    <?php include "navbar.php"; ?>
+    <?php include "checknav.php"; ?>
     <?php include "container.php"; ?>
 
     <script src="js/jquery.js" charset="utf-8"></script>
