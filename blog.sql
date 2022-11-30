@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 29, 2022 at 03:53 PM
+-- Generation Time: Nov 30, 2022 at 02:58 PM
 -- Server version: 5.7.12-log
 -- PHP Version: 5.6.21
 
@@ -27,11 +27,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tbl_blog` (
+  `blog_id` int(11) NOT NULL,
   `name` varchar(64) NOT NULL,
   `blog` text NOT NULL,
   `date` text NOT NULL,
   `time` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_blog`
+--
+
+INSERT INTO `tbl_blog` (`blog_id`, `name`, `blog`, `date`, `time`) VALUES
+(2, 'user', 'wasdwasdwasd', '30/11/2022', '13:08:19pm');
 
 -- --------------------------------------------------------
 
@@ -53,11 +61,18 @@ CREATE TABLE `tbl_user` (
 
 INSERT INTO `tbl_user` (`id`, `name`, `email`, `password`, `status`) VALUES
 (1, 'user', 'user@gmail.com', 'user', 1),
-(4, 'user2', 'user2@gmail.com', 'user2', 1);
+(4, 'user2', 'user2@gmail.com', 'user2', 1),
+(5, 'admin', 'admin@gmail.com', 'admin', 2);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tbl_blog`
+--
+ALTER TABLE `tbl_blog`
+  ADD PRIMARY KEY (`blog_id`);
 
 --
 -- Indexes for table `tbl_user`
@@ -70,10 +85,15 @@ ALTER TABLE `tbl_user`
 --
 
 --
+-- AUTO_INCREMENT for table `tbl_blog`
+--
+ALTER TABLE `tbl_blog`
+  MODIFY `blog_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

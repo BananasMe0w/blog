@@ -11,9 +11,9 @@
         <a class="nav-link" href="create_post.php"><button class="btn btn-info rounded-pill" type="button">+ create new post</button></a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><button class="btn text-light" type="button">Welcome <?php echo $_SESSION['sess_name']; ?></button> </a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><button class="btn text-light" type="button">Menu | <?php echo $_SESSION['sess_name']; ?></button> </a>
         <div class="dropdown-menu">
-          
+          <a class="dropdown-item" href="edit_post.php">Edit Post</a>
           <hr>
           <a class="dropdown-item" href="logout.php">Log out</a>
         </div>

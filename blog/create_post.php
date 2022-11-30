@@ -18,7 +18,7 @@
               <div class="card-body">
                 <form action="create_post_script.php" method="post">
                   <div class="col-12">
-                    <textarea placeholder="   write what you think..." rows="12" cols="120" name="post_blog"></textarea>
+                    <textarea placeholder=" write what you think..." rows="12" cols="120" name="post_blog"></textarea>
                   </div>
                   <div class="col-12 mt-5">
                     <button class="btn btn-success" type="submit">create</button>

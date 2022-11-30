@@ -25,6 +25,11 @@
           <br>
           <sup>when <?php echo $row['time'] ?></sup>
         </p>
+          <form action="edit_post_script.php" method="post">
+            <a href="edit_post.php?id=<?php echo $row['blog_id']; ?>"><button class="btn btn-success" type="button">edit</button></a>
+            <a href="delete.php?id=<?php echo $row['blog_id'] ?>"><button class="btn btn-danger" type="button">delete</button></a>
+          </form>
+        </div>
       </div>
     </div>
   </div>
